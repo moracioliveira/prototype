@@ -4,7 +4,7 @@
 }
 
 body {
-    padding: 100px;
+    padding: 50px 100px 100px 100px;
 }
 
 .header-container {
@@ -69,6 +69,11 @@ nav {
 .title_release_by_date {
     font-size: 15px;
     text-align: center !important;
+}
+
+.title_release_notes {
+    font: italic 12px Arial;
+    text-align: left !important;
 }
 
 .release_date {
