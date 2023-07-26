@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    padding: 100px;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+nav {
+    flex: 100%;
+}
+
+.body-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    text-align: left;
+}
+
+.body-item-left {
+    background-color: white;
+    flex: 20%;
+    border-right-style: solid;
+    border-right-color: black;
+}
+
+.body-item-center {
+    background-color: white;
+    flex: 65%;
+}
+
+.form-horizontal {
+    margin: 0px 20px 20px 20px;
+}
+
+.body-item-right {
+    padding: 10px;
+    flex: 10%;
+    border-left-style: solid;
+    border-left-color: black;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.list-group {
+    font-size: 15px;
+    position: fixed;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+/*@media (max-width: 800px) {*/
+/*  .body-item-right, .body-item-left {*/
+/*    flex: 100%;*/
+/*  }*/
+/*}*/
+
+.title_release_by_date {
+    font-size: 15px;
+    text-align: center !important;
+}
+
+.release_date {
+    font-size: 12px;
+    text-align: left !important;
+    color: blue;
+}
+
+.release_branch {
+    font-size: 12px;
+    text-align: left !important;
+}
+
+label {
+    font-size: small;
+}
