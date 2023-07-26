@@ -1,4 +1,5 @@
 <!--FIXME Responsive website-->
+<!--FIXME SEARCH BOX TO BE RIGHT ALIGNED BY ITSELF-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,12 +46,13 @@
 <div class="body-container">
     <div class="body-item-left">
         <div class="list-group">
-            <!--            TODO BADGE IS COUNT OF EMPTY FIELDS FOR SPECIFIC FORM-->
+            <!--            TODO BADGE IS COUNT OF EMPTY FIELDS FOR SPECIFIC FORM. USE JAVASCRIPT-->
             <a href="#" class="list-group-item active">views</a>
-            <a href="#top" class="list-group-item">customer/site information<span class="badge">5</span></a>
+            <a href="#top" class="list-group-item">customer/site information<span class="badge">3</span></a>
             <a href="#subnets" class="list-group-item">subnets</a>
             <a href="#wired_connections" class="list-group-item">wired connections</a>
             <a href="#wireless_connections" class="list-group-item">wireless connections</a>
+            <a href="#wireless_connections" class="list-group-item">customer/site notes</a>
             <a href="#" class="list-group-item active">engineering work</a>
             <a href="#top" class="list-group-item">create change</a>
             <a href="#top" class="list-group-item">reserve subnets</a>
@@ -146,6 +148,21 @@
                     </div>
                 </div>
             </div>
+<!--FIXME FIELD NEEDS TO BE MULTIPLE LINES-->
+<!--FIXME DATE TO BE ADDED AUTOMATICALLY FOR EACH ENTRY-->
+                        <div class="panel panel-default">
+                <div id="customer_site_notes" class="panel-heading">customer/site notes</div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="control-label col-sm-3" style="text-align: left">Notes / Comments:</label>
+                        <div class="col-sm-8">
+                            <input type="customer_site_notes" class="form-control" name="customer_site_notes"
+                                   placeholder="work details">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </form>
     </div>
     <div class="body-item-right">
