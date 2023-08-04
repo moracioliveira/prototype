@@ -11,7 +11,6 @@
           integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
 </head>
 <body>
 
@@ -41,17 +40,16 @@
         </div>
     </nav>
 </div>
-
 <div class="body-container">
     <div class="body-item-left">
         <div class="list-group">
             <!--            TODO BADGE IS COUNT OF EMPTY FIELDS FOR SPECIFIC FORM. USE JAVASCRIPT-->
             <a href="#" class="list-group-item active">views<span class="badge">3</span></a>
             <a href="#top" class="list-group-item">customer/site information<span class="badge">3</span></a>
-            <a href="#subnets" class="list-group-item">subnets<span class="badge">3</span></a>
-            <a href="#wired_connections" class="list-group-item">wired connections<span class="badge">3</span></a>
-            <a href="#wireless_connections" class="list-group-item">wireless connections<span class="badge">3</span></a>
-            <a href="#wireless_connections" class="list-group-item">customer/site notes<span class="badge">3</span></a>
+            <a href="#top" class="list-group-item">subnets<span class="badge">3</span></a>
+            <a href="#top" class="list-group-item">wired connections<span class="badge">3</span></a>
+            <a href="#top" class="list-group-item">wireless connections<span class="badge">3</span></a>
+            <a href="#top" class="list-group-item">customer/site notes<span class="badge">3</span></a>
             <a href="#" class="list-group-item active">engineering work<span class="badge">3</span></a>
             <a href="#top" class="list-group-item">create change<span class="badge">3</span></a>
             <a href="#top" class="list-group-item">reserve subnets<span class="badge">3</span></a>
@@ -62,106 +60,58 @@
         </div>
     </div>
     <div class="body-item-center">
-        <form class="form-horizontal">
+        <form class="main-form">
             <div class="panel panel-default">
-                <div class="panel-heading">customer/site information</div>
+                <div class="panel-heading">Panel Heading</div>
                 <div class="panel-body">
-                    <div class="form-group">
-                        <label class="control-label col-sm-3" style="text-align: left">Name:</label>
-                        <div class="col-sm-8">
-                            <input id="email" type="email" class="form-control" name="email" placeholder="Email">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label col-sm-3" style="text-align: left">Address:</label>
-                        <div class="col-sm-8">
-                            <input id="address" type="address" class="form-control" name="address"
-                                   placeholder="Address">
-                        </div>
-                    </div>
 
-                                        <div class="form-group">
-                        <label class="control-label col-sm-3" style="text-align: left">Assigned to:</label>
-                        <div class="col-sm-8">
-                            <input id="assigned_to" type="address" class="form-control" name="assigned_to"
-                                   placeholder="engineer">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
                         </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div id="subnets" class="panel-heading">subnets</div>
-                <div class="panel-body">
-                    <div class="form-group">
-                        <label class="control-label col-sm-3" style="text-align: left">Internal subnet:</label>
-                        <div class="col-sm-8">
-                            <input type="internal_subnets" class="form-control" name="internal_subnets"
-                                   placeholder="192.168.1.0">
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-sm-3" style="text-align: left">External subnet:</label>
-                        <div class="col-sm-8">
-                            <input type="external_subnets" class="form-control" name="external_subnets"
-                                   placeholder="192.168.2.0">
+                        <label for="inputAddress">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress2">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2"
+                               placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState">State</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputZip">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-sm-3" style="text-align: left">Wireless subnet:</label>
-                        <div class="col-sm-8">
-                            <input type="wireless_subnets" class="form-control" name="wireless_subnets"
-                                   placeholder="192.168.3.0">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div id="wired_connections" class="panel-heading">wired connections</div>
-                <div class="panel-body">
-                    <div class="form-group">
-                        <label class="control-label col-sm-3" style="text-align: left">Main circuit:</label>
-                        <div class="col-sm-8">
-                            <input type="main_circuit" class="form-control" name="main_circuit"
-                                   placeholder="Circuit type">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label col-sm-3" style="text-align: left">Backup circuit:</label>
-                        <div class="col-sm-8">
-                            <input type="backup_circuit" class="form-control" name="backup_circuit"
-                                   placeholder="Circuit type">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Check me out
+                            </label>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="panel panel-default">
-                <div id="wireless_connections" class="panel-heading">wireless connections</div>
-                <div class="panel-body">
-                    <div class="form-group">
-                        <label class="control-label col-sm-3" style="text-align: left">Vendor:</label>
-                        <div class="col-sm-8">
-                            <input type="vendor_wireless" class="form-control" name="vendor_wireless"
-                                   placeholder="Vendor">
-                        </div>
-                    </div>
-                </div>
-            </div>
-<!--FIXME FIELD NEEDS TO BE MULTIPLE LINES-->
-<!--FIXME DATE TO BE ADDED AUTOMATICALLY FOR EACH ENTRY-->
-                        <div class="panel panel-default">
-                <div id="customer_site_notes" class="panel-heading">customer/site notes</div>
-                <div class="panel-body">
-                    <div class="form-group">
-                        <label class="control-label col-sm-3" style="text-align: left">Notes / Comments:</label>
-                        <div class="col-sm-8">
-                            <input type="customer_site_notes" class="form-control" name="customer_site_notes"
-                                   placeholder="work details">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <button class="btn btn-primary" type="submit">Submit form</button>
         </form>
     </div>
     <div class="body-item-right">
@@ -174,7 +124,6 @@
         <p class="release_branch"><strong>67998</strong> - Oak</p>
     </div>
 </div>
-
 <div class="footer-container">
 </div>
 
